@@ -1,39 +1,42 @@
-function isAsal(...numbers) {
+function findPrime(...numbers) {
 
-    let counter = 0;
+let counter = 0;
 
-        for (let i= 0; i < numbers.length; i++) {
+numbers.forEach(number=>{
 
-           if ((numbers[i] == 0)|| (numbers[i] ==1) || (numbers[i]<0)){
-            
-                 continue
-    
-           } 
-           else{
-    
-               for(let j=2; j < numbers[i]; j++ ) {
-                   if (numbers[i] % j == 0 ){
-    
-                       counter = 1;
-    
-                       break;
-                   }
+    for (let i= 0; i < numbers.length; i++) {
+       if ((numbers[i] == 0)|| (numbers[i] ==1) || (numbers[i]<0)){
+
+           console.log(numbers[i] + " isn't prime number")
+
+       } 
+
+       else{
+
+           for(let j=2; j < numbers[i]; j++ ) {
+               if (numbers[i] % j == 0 ){
+
+                   counter = 1;
+
+                   break;
                }
-    
-               if(counter == 0) {
-                   //console.log(numbers[i] + " is prime number ")
-               }
-    
-               else {
-                   continue
-               }
-    
-               counter = 0
            }
-    
-        }
+
+           if(counter == 0) {
+               console.log(numbers[i] + " is prime number ")
+           }
+
+           else {
+               console.log (numbers[i]+ " isn't prime number")
+           }
+
+           counter = 0
+       }
+
     }
-    isAsal(10,-5,10,75,4,1,11,2,13,101,8)
+}
+)}
+findPrime(-7,-5,10,75,4,1,11)
 
     // ******************* Arkadaş Sayılar ***********************
 
