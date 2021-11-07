@@ -38,7 +38,7 @@ numbers.forEach(number=>{
 )}
 findPrime(-7,-5,10,75,4,1,11)
 
-    // ******************* Arkadaş Sayılar ***********************
+    // *******************  Friend Number ************************
 
 function findFriendNumber(number1,number2) {
 
@@ -68,7 +68,8 @@ function findFriendNumber(number1,number2) {
         findFriendNumber(220, 284)
         findFriendNumber(1685,8562)
 
-        // ******** Mükemmel sayılar *********
+        //************* Perfect Number *************
+
 
 function  findPerfectNumber(number) {
 
@@ -87,7 +88,8 @@ function  findPerfectNumber(number) {
 }
 findPerfectNumber(6)
 
-// ******* 1000 e kadar asal ******
+//  *********** Find Prime to 1000  ***********
+
 function primeNumbers() {
     let count=0
     for (let i = 2; i < 1000; i++) {
